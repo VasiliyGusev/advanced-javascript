@@ -72,6 +72,13 @@ class GoodsList {
 class Basket {
 
     /**
+     * @getElement - определение добовляемого товара
+     */
+    getElement() {
+
+    }
+
+    /**
      * @addGoods - метод добавления товаров в корзину
      */
     addGoods() {
