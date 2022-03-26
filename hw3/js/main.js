@@ -1,3 +1,5 @@
+const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
+
 /**
  * @GoodsItem class - создадём класс для товара
  */
@@ -28,6 +30,7 @@ class GoodsItem {
 class GoodsList {
     constructor() {
         this.goods = [];
+
     }
 
     /**
@@ -62,7 +65,7 @@ class GoodsList {
         this.goods.forEach(item => {
             sum += item.price;
         });
-        alert(sum);
+        console.log(sum);
     }
 }
 
@@ -70,53 +73,68 @@ class GoodsList {
  * @Basket class - наполнение корзины
  */
 class Basket {
+    constructor(container = '.basket-inner') {
+        this.container = container;
+        this.goods = [];
+        this.showBasket();
+        this.getElement()
+            .then(data => {
+                this.goods = data.contents;
+                this.renderBasket();
+            });
+    }
 
     /**
      * @getElement - определение добовляемого товара
      */
     getElement() {
-
-    }
-
-    /**
-     * @addGoods - метод добавления товаров в корзину
-     */
-    addGoods() {
-
-    }
-
-    /**
-     * @removeGoods - метод удаления товаров из корзины
-     */
-    removeGoods() {
-
-    }
-
-    /**
-     * @changeQuantityGoods - изменение количества товаров
-     */
-    changeQuantityGoods() {
-
+        return fetch(`${API_URL}/getBasket.json`)
+            .then(param => param.json())
+            .catch(error => {
+                console.log(error);
+            })
     }
 
     /**
      * @renderBasket - рендер товаров в блоке корзины
      */
     renderBasket() {
+        const inner = document.querySelector(this.container);
+        for (let key of this.goods) {
+            const prod = new ElementBasket();
+            inner.insertAdjacentHTML('beforeend', prod.render(key))
+        }
+    }
 
+    /**
+     * @showBasket - рендер товаров в блоке корзины
+     */
+    showBasket() {
+        document.querySelector('.cart-button').addEventListener('click', () => {
+            document.querySelector('.basket-inner').classList.toggle('hidden');
+        });
     }
 }
 
 /**
  * @elementBasket - работа с элементом корзины
  */
-class elementBasket {
+class ElementBasket {
 
     /**
      * @render - вёрстка одного товара
      */
-    render() {
-
+    render(product) {
+        return ` <div class = 'basket-item' data-id = '${product.id_product}'>
+                    <div class = 'product-img'>
+                        <img src = 'img/good.ico' alt = 'img'>
+                        <div class = 'product-param'>
+                            <p class = 'product-title'>${product.product_name}</p>
+                            <p class = 'product-quantity'> Колличество: ${product.quantity} шт.</p>
+                            <p class = 'product-price'>Цена: ${product.price} $</p>
+                        </div>
+                    </div>
+                  </div>`
     }
 }
 
@@ -124,3 +142,4 @@ const list = new GoodsList();
 list.fetchGoods();
 list.render();
 list.fullSum();
+new Basket();
