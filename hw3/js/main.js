@@ -14,13 +14,13 @@ class GoodsItem {
      */
     render() {
         return `<div class="goods-item">
-                <div class="goods-inner">
-                    <h3>${this.title}</h3>
-                    <p>${this.price} $</p>
-                    <img src="img/good.ico" alt="img">
-                </div>
-                <button class="buy-btn">Купить</button>
-           </div>`;
+                    <div class="goods-inner">
+                        <h3>${this.title}</h3>
+                        <p>${this.price} $</p>
+                        <img src="img/good.ico" alt="img">
+                    </div>
+                    <button class="buy-btn">Купить</button>
+                 </div>`;
     }
 }
 
