@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="main">
+    <div class="text">
+        <p id="main-text">{{ text }}</p>
+        <div class="buttons">
+            <button class="btn" id="quote" v-on:click="replaserNotAll">Не все кавычки</button>
+            <button class="btn" id="quotes" v-on:click="replaserAll">Все кавычки</button>
+            <button class="btn" id="Update" v-on:click="refresh">Обновить страницу</button>
+        </div>
+
+    </div>
+</main>
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="main.js"></script>
+</body>
+</html>
