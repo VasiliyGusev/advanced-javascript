@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd39920e-992e-41c7-b902-245fd1e81d0c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/hw3/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw4" />
+      <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw4\js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,10 +44,28 @@
       <updated>1648309908290</updated>
       <workItem from="1648309909456" duration="28000" />
       <workItem from="1648378697540" duration="124000" />
+      <workItem from="1648379554448" duration="5147000" />
+      <workItem from="1648385619016" duration="1990000" />
+      <workItem from="1648570714016" duration="3064000" />
+      <workItem from="1648631424315" duration="29000" />
+      <workItem from="1648631800253" duration="3061000" />
+      <workItem from="1648982204777" duration="1315000" />
+      <workItem from="1648985524352" duration="2490000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
