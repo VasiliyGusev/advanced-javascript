@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw5</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="container header-container">
+            <img src="img/logo.svg" alt="img" class="header-logo">
+            <div class="right-header">
+                <form action="#" class="search" @submit.prevent="filterGoods">
+                    <input id="input" type="text" class="search-line" @change="inputOut" v-model="searchLine">
+                    <button type="submit" class="search-btn"></button>
+                </form>
+                <button class="cart-button" type="button" @click="toggleDropdown">Корзина</button>
+                <div id="bask" class="basket-inner" v-show="cartVisible">
+                    <p v-if="!basketItems.length">Нет данных</p>
+                    <div class="basket-items" v-for="item of basketItems" :key="item.id_product">
+                        <div class="basket-list">
+                            <img :src="imgPath" alt="img">
+                            <div class="basket-item">
+                                <div class="basket-title">{{ item.product_name }}</div>
+                                <div class="basket-quantity">{{ item.quantity }} шт.</div>
+                                <div class="basket-price">{{ item.price }} ₽</div>
+                            </div>
+                        </div>
+                        <div class="basket-right">
+                            <div class="calculate-price">Сумма: {{ item.quantity*item.price }}</div>
+                            <button class="del-btn" @click="remove(item)">&#10006;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-bg">
+            <div class="container">
+                <div class="main-grid">
+                    <div class="goods-list" v-for="goods of filteredGoods" :key="goods.id_product">
+                        <img :src="imgPath" alt="img">
+                        <div class="desc">
+                            <h3>{{ goods.product_name }}</h3>
+                            <p>{{ goods.price }} ₽</p>
+                            <button type="buy-btn" @click="addProduct(goods)">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

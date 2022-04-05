@@ -13,9 +13,9 @@
     <div class="text">
         <p id="main-text">{{ text }}</p>
         <div class="buttons">
-            <button class="btn" id="quote" v-on:click="replaserNotAll">Не все кавычки</button>
-            <button class="btn" id="quotes" v-on:click="replaserAll">Все кавычки</button>
-            <button class="btn" id="Update" v-on:click="refresh">Обновить страницу</button>
+            <button class="btn" id="quote" @click="replaserNotAll">Не все кавычки</button>
+            <button class="btn" id="quotes" @click="replaserAll">Все кавычки</button>
+            <button class="btn" id="Update" @click="refresh">Обновить страницу</button>
         </div>
 
     </div>
