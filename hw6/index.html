@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw5</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="container header-container">
+            <img src="img/logo.svg" alt="img" class="header-logo">
+            <div class="right-header">
+                <search-comp></search-comp>
+                <button class="cart-button" type="button" @click="toggleDropdown">Корзина</button>
+                <basket-comp></basket-comp>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-bg">
+            <div class="container">
+                <error-comp v-if="errorData"></error-comp>
+                <catalog-comp></catalog-comp>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<script src="js/vue.js"></script>
+<script src="js/search-comp.js"></script>
+<script src="js/basket-comp.js"></script>
+<script src="js/error-comp.js"></script>
+<script src="js/catalog-comp.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
