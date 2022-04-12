@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd39920e-992e-41c7-b902-245fd1e81d0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,6 +24,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26vhKzsOzTMRAG4WGaRRtqNFxRU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,11 +35,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hw7/app/server/db" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw7\app\server\db" />
+      <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw7\app\server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw7\app\server\db" />
       <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw4" />
       <recent name="C:\Users\vsawi\OneDrive\Рабочий стол\GB\JS 2\advanced-javascript\hw4\js" />
     </key>
@@ -51,6 +67,12 @@
       <workItem from="1648631800253" duration="3061000" />
       <workItem from="1648982204777" duration="1315000" />
       <workItem from="1648985524352" duration="2490000" />
+      <workItem from="1649026042949" duration="104000" />
+      <workItem from="1649237248242" duration="146000" />
+      <workItem from="1649496181911" duration="21000" />
+      <workItem from="1649642252154" duration="670000" />
+      <workItem from="1649721792565" duration="11306000" />
+      <workItem from="1649733586636" duration="1452000" />
     </task>
     <servers />
   </component>
